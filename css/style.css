@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
+* Copyright 2013-2023 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #1abc9c;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #1abc9c;
+  --bs-secondary: #2c3e50;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 26, 188, 156;
+  --bs-secondary-rgb: 44, 62, 80;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-border-width: 0.125rem;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.5rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.75rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: #1abc9c;
+  --bs-link-hover-color: #15967d;
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+}
+/* Navbar tetap di atas */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Pastikan transisi berlaku */
+}
+
+/* Ukuran lebih kecil saat navbar mengecil */
+.navbar.shrink {
+    padding: 8px 0 !important;  /* Sesuaikan padding saat menyusut */
+    background-color: rgba(0, 0, 0, 0.9); /* Lebih transparan */
+}
+
+/* Ukuran font navbar normal */
+.navbar .navbar-brand {
+    font-size: 1.75rem; /* Ukuran font default */
+    font-weight: bold;
+    transition: font-size 0.3s ease-in-out; /* Pastikan transisi berlaku */
+}
+.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/* Ukuran font navbar lebih kecil saat menyusut */
+.navbar.shrink .navbar-brand{
+    font-size: 1.5rem !important; /* Ukuran font yang lebih kecil */
+}
+
+/* Konten utama agar tidak tertutup navbar */
+.content {
+    margin-top: 80px;
+    height: 2000px; /* Agar bisa discroll */
+    padding: 20px;
+}
+
+/* Tombol awal (di dalam konten) */
+.floating-button {
+    position: absolute;
+    top: 150px; /* Posisi awal di dalam konten */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tombol navbar (di luar navbar-collapse agar tidak menggeser item lain) */
+.nav-button {
+    display: none;
+    position: absolute;
+    right: 10px; /* Posisikan di kanan navbar */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navbar toggler icon */
+.navbar-toggler-icon {
+    filter: invert(1); /* Mengubah warna ikon menjadi putih */
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+}
+#navbar .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+#navbar .navbar-nav li.nav-item a.nav-link:hover {
+  color: #1abc9c;
+}
+.pPhoto {
+  padding-top: 20vh; /* Default untuk layar besar */
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .pPhoto {
+    padding-top: 15vh; /* Ukuran padding saat layar kecil (HP) */
+    padding-bottom: 0vh;
+}
+}
+.btn-secondary {
+    background-color: #1abc9c !important; /* Warna utama */
+    border-color: #1abc9c !important;
+    color: white !important; /* Warna teks tetap putih */
+    transition: background-color 0.3s ease-in-out; /* Efek smooth */
+}
+
+.btn-secondary:hover {
+    background-color: #15967d !important; /* Warna lebih gelap saat hover */
+    border-color: #15967d !important;
+    color: white !important; /* Pastikan teks tetap putih */
+}
+.btn-secondary-materi {
+    padding: 0px 10px;
+    background-color: #1abc9c !important; /* Warna utama */
+    border-color: #1abc9c !important;
+    color: white !important; /* Warna teks tetap putih */
+    transition: background-color 0.3s ease-in-out; /* Efek smooth */
+}
+
+.btn-secondary-materi:hover {
+    background-color: #15967d !important; /* Warna lebih gelap saat hover */
+    border-color: #15967d !important;
+    color: white !important; /* Pastikan teks tetap putih */
+}
+.btn-secondary-inverse { 
+    padding: 9px 18px;
+    background-color: #1abc9c !important; 
+    border: 2px solid white !important; 
+    color: white !important; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.btn-secondary-inverse:hover {
+    background-color: white !important; 
+    border-color: white !important;
+    color: #1a252f !important; 
+}
+.btn-secondary-inverseHp { 
+    padding: 6px 15px;
+    background-color: #1abc9c !important; 
+    border: 2px solid white !important; 
+    color: white !important; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.btn-secondary-inverseHp:hover {
+    background-color: white !important; 
+    border-color: white !important;
+    color: #1a252f !important; 
+}
+.text-upp{
+    color: #2c3e50;
+}
+.highlight {
+    background: linear-gradient(transparent 50%, white 50%);
+}
+ul li::marker {
+    color: #2c3e50; /* Ubah warna bullet */
+    font-size: 1.5em; /* Ubah ukuran */
+}
+.border-upp{
+    border-color: #212529;
+}
+.copyright {
+  background-color: #1a252f;
+}
+.shadow-sides {
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: white;
+}
+.Fbtn:hover{
+    background-color: #15967d !important; /* Warna lebih gelap saat hover */
+    border-color: #15967d !important;
+    color: white !important; /* Pastikan teks tetap putih */
+}
+.text-indent {
+    text-indent: 30px; /* Bisa diubah sesuai kebutuhan */
+}
+.overflow-container {
+    height: auto;      /* Tinggi menyesuaikan konten */
+    max-height: 80vh;  /* Batasi tinggi maksimal agar tidak melebihi layar */
+    overflow-y: auto;  /* Tambahkan scroll jika kontennya lebih panjang */
+}
+.back-button {
+    position: sticky;
+    bottom: 0;
+    left: 10px;
+    font-size: 40px;
+    color: white;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0); /* Transparan */
+}
+.tblBack{
+    bottom: 10vh;
+    left: 30%;
+}
+.tblBack1{
+    bottom: 10vh;
+    left: 0%;
+}
+.scrolling-button {
+  width: 100%;
+  overflow: hidden; /* Menyembunyikan teks yang berlebihan */
+  position: relative;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap; /* Menghindari teks terbungkus ke baris baru */
+  transform: translateX(0); /* Awalnya teks di posisi normal */
+  transition: transform 0.3s ease-out; /* Transisi smooth untuk pergerakan teks */
+}
+
+/* Animasi scroll teks ke kiri */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%); /* Mulai dari luar kanan */
+}
+100% {
+    transform: translateX(-100%); /* Bergerak ke luar kiri */
+}
+}
+
+/* Menambahkan animasi scroll jika teks lebih panjang dari tombol */
+.scrollable {
+  animation: scroll-left 10s linear infinite; /* Animasi bergerak ke kiri */
+}
+.question-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background:  #1abc9c;
+    cursor: pointer;
+}
+.option:hover {
+    background: #ddd;
+}
+.correct {
+    color: green;
+    font-weight: bold;
+}
+.incorrect {
+    color: red;
+    font-weight: bold;
+}

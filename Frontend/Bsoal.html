@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mathefy</title>
+    <link href="../css/boostrap.css" rel="stylesheet">
+    <script src="../js/jquary.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/awesom/css/all.min.css">
+    <link href="../css/gLeapis.css" rel="stylesheet" type="text/css" />
+    <link href="../css/gleapis1.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="vh-100 d-flex flex-column justify-content-between align-items-center bg-light">
+
+    <!-- Header -->
+    <div class="col-12 col-lg-5 bg-secondary text-white py-3">
+        <div  class="text-uppercase text-white fw-bold fs-4"><center>Mathefy</center></div>
+    </div>
+
+    <!-- Content (Mengisi Sisa Tinggi) -->
+    <div style="background-image: url('../img/home1.webp'); background-size: cover; background-position: center;" class="col-12 col-lg-5 flex-grow-1 bg-white d-flex flex-column align-items-center justify-content-start position-relative overflow-container">
+        <div class="question-box col-11">
+            <p id="questionNumber" class="fw-bold text-primary"></p>
+            <p id="question" style="text-align: justify;">Loading...</p>
+            <div id="options" class="col-12"></div>
+            <div class="col-12 d-flex justify-content-center align-items-center" style="max-width: 100%;">
+                <div class=""> 
+                    <p id="feedback"></p>
+                </div>
+            </div>
+            <div class="col-12">
+                <center>
+                    <button id="nextButton" class="d-none btn btn-secondary" onclick="nextQuestion()">Soal Selanjutnya</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="col-12 col-lg-5 bg-secondary text-white p-3 text-center d-flex align-items-center">
+        <div class="position-fixed">
+            <a href="javascript:history.back()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="container"><small>Mathefy 1.0.0 All Rights Reserved.</small></div>
+    </div>
+<script src="../js/contohS.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/boostrap.js"></script>
+</body>
+</html>

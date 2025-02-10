@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mathefy</title>
+    <link href="css/boostrap.css" rel="stylesheet">
+    <script src="js/jquary.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/awesom/css/all.min.css">
+    <link href="css/gLeapis.css" rel="stylesheet" type="text/css" />
+    <link href="css/gleapis1.css" rel="stylesheet" type="text/css" />
+</head>  
+<body id="pageTop">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-uppercase fixed-top py-3" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Judul di kiri -->
+            <div>
+                <a class="navbar-brand text-white fw-bold" href="#pageTop">Mathefy</a>
+            </div>
+            <div class="d-block d-lg-none">
+                <a href="#play"><button id="navButtonHp" class="btn btn-secondary text-uppercase">Play Now</button></a>
+            </div>
+
+
+            <!-- Toggle Navbar untuk tampilan HP -->
+            <button class="navbar-toggler text-white rounded ms-auto border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Navbar -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Ui">Ui Preview</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <a href="#play">
+                    <button id="navButton" class="btn btn-secondary text-uppercase nav-button">Play Now</button>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <header class="bg-primary w-100 pb-3 pb-md-5">
+        <div class="d-flex flex-column justify-content-center align-items-center pPhoto">
+            <div class="d-none d-lg-block">
+                <p class="fs-1 text-uppercase text-white"><b>Jago Aljabar dengan Kuis Interaktif</b></p>
+            </div>
+            <div class="d-block d-lg-none"><center>
+                <p class="fs-4 text-uppercase text-white"><b>Jago Aljabar dengan Kuis Interaktif</b></p>
+            </center></div>
+            <div class="col-6 pt-1"><img src="img/img.webp" class="img-fluid d-none d-md-block"></div>
+            <div class="col-11 pt-1"><img src="img/img.webp" class="img-fluid d-block d-md-none"></div>
+        </div>
+        <div class="w-100">
+            <div class="d-none d-lg-block">
+                <center>
+                    <p class="text-white fs-4">
+                        Pelajari konsep aljabar dengan cara yang seru dan interaktif.<br>
+                        Ingin cepat mengerti konsep Aljabar dengan cepat dan menyenangkan?<br>
+                        Tunggu apa lagi, Mainkan sekarang !!!.
+                    </p>
+                </center>
+            </div>
+            <div class="d-block d-lg-none text-justify">
+                <center>
+                    <p class="text-white fs-6">
+                        Pelajari konsep aljabar dengan cara yang seru dan interaktif.
+                        Ingin cepat mengerti konsep Aljabar dengan cepat dan menyenangkan?<br>
+                        Tunggu apa lagi, Mainkan sekarang !!!.
+                    </p>
+                </center>
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center align-items-center">
+            <a href="#play" style="text-decoration: none;">
+                <button id="contentButton" class="btn btn-secondary-inverse text-uppercase d-none d-lg-block"><b>Play Now</b></button>
+                <button id="contentButtonHp" class="btn btn-secondary-inverseHp d-block d-lg-none"><b>Play Now</b></button>
+            </a>
+        </div>
+    </header>
+    <section id="about" class="bg-white pb-3 pb-md-5">
+        <div class="w-100 d-flex justify-content-center align-items-center pt-3 pt-md-5 pb-0 pb-md-2">
+            <p class="fs-1 text-uppercase text-upp"><b>Tentang Game</b></p>
+        </div>
+        <div class="w-100 d-flex justify-content-center align-items-center">
+            <div class="col-8 d-none d-lg-block">
+                <p class="text-upp fs-4" style="text-align: justify;">
+                    Selamat datang di <b>Mathefy</b>, game kuis aljabar yang dirancang untuk menguji keterampilan matematika Anda dengan cara yang menyenangkan dan interaktif! Apakah Anda seorang pelajar yang ingin meningkatkan pemahaman tentang aljabar atau seseorang yang mencari tantangan baru, <b>Mathefy</b> adalah pilihan sempurna untuk Anda.
+                </p>
+                <p class="text-upp fs-4" style="text-align: justify;">
+                    Dalam <b>Mathefy</b>, Anda akan menghadapi berbagai pertanyaan aljabar yang beragam, mulai dari soal dasar hingga soal yang lebih kompleks. Setiap tantangan yang diselesaikan akan meningkatkan kemampuan Anda dalam memecahkan masalah matematika.
+                </p>
+                <p class="text-upp fs-4" style="text-align: justify;"><b>Fitur utama :</b></p>
+                <ul>
+                    <li><p class="text-upp fs-4" style="text-align: justify;">
+                        <b>Materi interaktif</b>  Jelajahi kumpulan materi lengkap yang disusun dengan bahasa yang mudah dipahami, mulai dari konsep dasar hingga pembahasan mendalam.
+                    </p></li>
+                    <li><p class="text-upp fs-4" style="text-align: justify;">
+                        <b>Latihan soal</b> Uji pemahamanmu dengan berbagai latihan soal yang dirancang secara terorganisir sesuai materi yang telah didapat.
+                    </p></li>
+                    <li><p class="text-upp fs-4" style="text-align: justify;">
+                        <b>Bank soal</b> Akses berbagai macam soal dari berbagai tingkat kesulitan, lengkap dengan pembahasan yang mendetail. Cocok untuk persiapan ujian atau sekadar menguji pemahamanmu dalam suatu topik.
+                    </p></li>
+                    <li><p class="text-upp fs-4" style="text-align: justify;">
+                        <b>Mode tantangan (Comingsoon)</b> Uji pemahamanmu tentang aljabar dengan teman disekitarmu, anda dapat bertanding dengan teman anda mengerjakan beberapa soal dengan waktu yang terbatas
+                    </p></li>
+                </ul>
+                <p class="text-upp fs-4" style="text-align: justify;">
+                    Dengan antarmuka yang ramah pengguna dan gameplay yang adiktif, <b>Mathefy</b> bukan hanya memperbaiki keterampilan aljabar Anda, tetapi juga memberikan pengalaman belajar yang menyenangkan. Ayo, tantang diri Anda dan jadilah ahli aljabar dengan <b>Mathefy</b>!
+                </p>
+            </div>
+            <div class="col-11 d-block d-lg-none">
+                <p class="text-upp fs-6" style="text-align: justify;">
+                    Selamat datang di <b>Mathefy</b>, game kuis aljabar yang dirancang untuk menguji keterampilan matematika Anda dengan cara yang menyenangkan dan interaktif! Apakah Anda seorang pelajar yang ingin meningkatkan pemahaman tentang aljabar atau seseorang yang mencari tantangan baru, <b>Mathefy</b> adalah pilihan sempurna untuk Anda.
+                </p>
+                <p class="text-upp fs-6" style="text-align: justify;">
+                    Dalam <b>Mathefy</b>, Anda akan menghadapi berbagai pertanyaan aljabar yang beragam, mulai dari soal dasar hingga soal yang lebih kompleks. Setiap tantangan yang diselesaikan akan meningkatkan kemampuan Anda dalam memecahkan masalah matematika.
+                </p>
+                <p class="text-upp fs-6" style="text-align: justify;"><b>Fitur utama :</b></p>
+                <ul>
+                    <li><p class="text-upp fs-6" style="text-align: justify;">
+                        <b>Materi interaktif</b>  Jelajahi kumpulan materi lengkap yang disusun dengan bahasa yang mudah dipahami, mulai dari konsep dasar hingga pembahasan mendalam.
+                    </p></li>
+                    <li><p class="text-upp fs-6" style="text-align: justify;">
+                        <b>Latihan soal</b> Uji pemahamanmu dengan berbagai latihan soal yang dirancang secara terorganisir sesuai materi yang telah didapat.
+                    </p></li>
+                    <li><p class="text-upp fs-6" style="text-align: justify;">
+                        <b>Bank soal</b> Akses berbagai macam soal dari berbagai tingkat kesulitan, lengkap dengan pembahasan yang mendetail. Cocok untuk persiapan ujian atau sekadar menguji pemahamanmu dalam suatu topik.
+                    </p></li>
+                    <li><p class="text-upp fs-6" style="text-align: justify;">
+                        <b>Mode tantangan (Comingsoon)</b> Uji pemahamanmu tentang aljabar dengan teman disekitarmu, anda dapat bertanding dengan teman anda mengerjakan beberapa soal dengan waktu yang terbatas
+                    </p></li>
+                </ul>
+                <p class="text-upp fs-6" style="text-align: justify;">
+                    Dengan antarmuka yang ramah pengguna dan gameplay yang adiktif, <b>Mathefy</b> bukan hanya memperbaiki keterampilan aljabar Anda, tetapi juga memberikan pengalaman belajar yang menyenangkan. Ayo, tantang diri Anda dan jadilah ahli aljabar dengan <b>Mathefy</b>!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="Ui" class="bg-primary pb-3 pb-md-5">
+        <div class="w-100 d-flex justify-content-center align-items-center pt-3 pt-md-5 pb-0 pb-md-2">
+            <p class="fs-1 text-white text-upp"><b>Ui Preview</b></p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="col-11 col-md-6 border border-white">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/SS1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/SS2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/SS3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/SS4.png" class="d-block w-100" alt="...">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+    </div>
+</div>
+</section>
+<section id="contact" class="bg-white pb-3 pb-md-5">
+    <div class="w-100 d-flex justify-content-center align-items-center pt-3 pt-md-5 pb-0 pb-md-2">
+        <p class="fs-1 text-upp"><b>Tentang Pembuat</b></p>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center d-block d-lg-none">
+        <div class="col-10">
+            <div class="fs-5 text-upp d-block d-lg-none mb-3"><i class="fa-solid fa-user"></i> <b>Rendy Priyantama Erwanda</b>
+                <p class="fs-6"><i>Software Defeloper</i></p>
+                <p class="fs-6" style="text-align: justify;">
+                    Saya adalah salah satu pengembang sekaligus <i>software defeloper</i> dari aplikasi <b>Mathefy</b>, aplikasi kuis interaktif yang membantu pengguna memahami aljabar dengan cara yang menyenangkan. Dengan pengalaman dalam pengembangan web, saya ingin menciptakan alat edukasi yang bermanfaat bagi semua orang.
+                </p>
+                <p class="fs-6">Media sosial :</p>
+                <div class="row col-12 fs-6">
+                    <div class="col border-end border-secondary"><center><a href="mailto:rendype222@gmail.com" class="text-decoration-none" target="_blank">
+                        Email
+                    </a></center></div>
+                    <div class="col border-end border-secondary"><center><a href="https://www.facebook.com/rendy.p.796569" target="_blank" class="text-decoration-none">
+                        Facebook
+                    </a></center></div>
+                    <div class="col"><center><a href="https://www.instagram.com/rendypriyan22/" class="text-decoration-none" target="_blank">
+                        Instagram
+                    </a></center></div>
+                </div>
+            </div>
+            <div class="fs-5 text-upp d-block d-lg-none border-top border-secondary"><i class="fa-solid fa-user"></i> <b>Shofa</b>
+                <p class="fs-6"><i>Educational Content Developer</i></p>
+                <p class="fs-6" style="text-align: justify;">
+                    Saya adalah salah satu pengembang sekaligus <i>Educational Content Developer</i> dari aplikasi <b>Mathefy</b>, Aljabar merupakan cabang ilmu matematika dasar pada Sekolah Menengah Pertama (SMP) yang dianggap cukup sulit karena tidak hanya mengoperasikan angka, tetapi juga mengoperasikan variabel (huruf). Harapanya dengan aplikasi <b>Mathefy</b> ini, pengguna mampu memahami bentuk aljabar serta pengoperasianya dengan mudah dan menyenangkan, sehingga materi aljabar pada jenjang SMP ini tidak lagi dianggap sulit dan dapat dijadikan dasar untuk materi aljabar lanjutan di tingkat Sekolah Menengah Atas (SMA).
+                </p>
+                <p class="fs-6">Media sosial :</p>
+                <div class="row col-12 fs-6">
+                    <div class="col border-end border-secondary"><center><a href="mailto:-@gmail.com" class="text-decoration-none" target="_blank">
+                        Email
+                    </a></center></div>
+                    <div class="col border-end border-secondary"><center><a href="https://www.facebook.com/-" target="_blank" class="text-decoration-none">
+                        Facebook
+                    </a></center></div>
+                    <div class="col"><center><a href="https://www.instagram.com/-/" class="text-decoration-none" target="_blank">
+                        Instagram
+                    </a></center></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-start row">
+        <div class="col-10 col-md-4 align-items-start d-none d-lg-block">
+            <div class="fs-4 text-upp d-none d-lg-block"><i class="fa-solid fa-user"></i> <b>Rendy Priyantama Erwanda</b>
+                <p class="fs-5"><i>Software Defeloper</i></p>
+                <p class="fs-5" style="text-align: justify;">
+                    Saya adalah salah satu pengembang sekaligus <i>software defeloper</i> dari aplikasi <b>Mathefy</b>, aplikasi kuis interaktif yang membantu pengguna memahami aljabar dengan cara yang menyenangkan. Dengan pengalaman dalam pengembangan web, saya ingin menciptakan alat edukasi yang bermanfaat bagi semua orang.
+                </p>
+                <p class="fs-5">Media sosial :</p>
+                <div class="row col-12 fs-5">
+                    <div class="col border-end border-secondary"><center><a href="mailto:rendype222@gmail.com" class="text-decoration-none" target="_blank">
+                        Email
+                    </a></center></div>
+                    <div class="col border-end border-secondary"><center><a href="https://www.facebook.com/rendy.p.796569" target="_blank" class="text-decoration-none">
+                        Facebook
+                    </a></center></div>
+                    <div class="col"><center><a href="https://www.instagram.com/rendypriyan22/" class="text-decoration-none" target="_blank">
+                        Instagram
+                    </a></center></div>
+                </div>  
+            </div>           
+        </div>
+        <div class="col-10 col-md-4 border-start border-secondary">
+            <div class="fs-4 text-upp d-none d-lg-block"><i class="fa-solid fa-user"></i> <b>Shofa</b>
+                <p class="fs-5"><i>Educational Content Developer</i></p>
+                <p class="fs-5" style="text-align: justify;">
+                    Aljabar merupakan cabang ilmu matematika dasar pada Sekolah Menengah Pertama (SMP) yang dianggap cukup sulit karena tidak hanya mengoperasikan angka, tetapi juga mengoperasikan variabel (huruf). Harapanya dengan aplikasi <b>Mathefy</b> ini, pengguna mampu memahami bentuk aljabar serta pengoperasianya dengan mudah dan menyenangkan, sehingga materi aljabar pada jenjang SMP ini tidak lagi dianggap sulit dan dapat dijadikan dasar untuk materi aljabar lanjutan di tingkat Sekolah Menengah Atas (SMA).
+                </p>
+                <p class="fs-5">Media sosial :</p>
+                <div class="row col-12 fs-5">
+                    <div class="col border-end border-secondary"><center><a href="mailto:-@gmail.com" class="text-decoration-none" target="_blank">
+                        Email
+                    </a></center></div>
+                    <div class="col border-end border-secondary"><center><a href="https://www.facebook.com/-" target="_blank" class="text-decoration-none">
+                        Facebook
+                    </a></center></div>
+                    <div class="col"><center><a href="https://www.instagram.com/-/" class="text-decoration-none" target="_blank">
+                        Instagram
+                    </a></center></div>
+                </div>  
+            </div>           
+        </div>
+    </div>
+</section>
+<section id="play" class="bg-primary pb-3 pb-md-5">
+    <div class="w-100 d-flex justify-content-center align-items-center pt-3 pt-md-5 pb-0 pb-md-2 d-none d-lg-block">
+        <p class="fs-1 text-white" style="text-align: center;"><b>Siap uji kemampuan Aljabarmu ?</b></p>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center pt-3 pt-md-5 pb-0 pb-md-2 d-block d-lg-none">
+        <p class="fs-2 text-white"><b>Siap uji kemampuan Aljabarmu ?</b></p>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center d-none d-lg-block">
+        <p class="fs-4 text-white" style="text-align: center;">
+            Jawab pertanyaan aljabar dan tingkatkan pemahamanmu!
+        </p>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center d-block d-lg-none">
+        <p class="fs-6 text-white" style="text-align: center;">
+            Jawab pertanyaan aljabar dan tingkatkan pemahamanmu!
+        </p>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center">
+        <a href="Frontend/home.html"><button class="btn btn-secondary-inverse">Mulai Sekarang</button></a>
+    </div>
+</section>
+<div class="copyright py-4 text-center text-white d-none d-lg-block">
+    <div class="container"><small>Mathefy 1.0.0 | © 2025 Mathefy. All Rights Reserved.</small></div>
+</div>
+<div class="copyright py-3 text-center text-white d-block d-lg-none">
+    <div class="container"><small>Mathefy 1.0.0 | © 2025 Mathefy. All Rights Reserved.</small></div>
+</div>
+<script src="js/script.js"></script>
+<script src="js/boostrap.js"></script>
+</body>
+</html>
