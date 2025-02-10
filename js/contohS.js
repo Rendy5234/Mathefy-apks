@@ -25,26 +25,6 @@ const questions = [
     { 
         question: 
             "<b><nobr>S1= suku 1 |</nobr> <nobr>S2= suku 2 |</nobr> <nobr>V1 = variabel 1 |</nobr> <nobr>V2 = variabel 2 |</nobr> <nobr>Koe = koefisien |</nobr> <nobr>Kon = konstanta</nobr></b>" + 
-            "\n Tentukan suku, variabel, koefisien, dan konstanta dari <b>9a - b + 9</b>!", 
-        options: [
-            "S1 = -9a | S2 = -b | V1 = a | V2 = b <br> Koe_a = 9 | Koe_b = 1 | Kon = 9", 
-            "S1 = 9a | S2 = -b | V1 = a | V2 = b <br> Koe_a = 9 | Koe_b = 1 | Kon = -9", 
-            "S1 = 9a | S2 = -b | V1 = a | V2 = b <br> Koe_a = 9 | Koe_b = 1 | Kon = 9", 
-            "S1 = -9a | S2 = b | V1 = a | V2 = b <br> Koe_a = 9 | Koe_b = 1 | Kon = 9"], 
-        answer: 2,
-        explanation:
-            "\nBentuk aljabar = 3x<sup>2</sup> - 4x + 8" + 
-            "\n Suku 1 = 3x<sup>2</sup> " +
-            "\n Suku 2 = -4x" +
-            "\n Variabel 1 = x<sup>2</sup> " +
-            "\n Variabel 2 = x" +  
-            "\n Koefisien x<sup>2</sup> = 3 " +
-            "\n Koefisien x = -4 " + 
-            "\n Konstanta = 8"
-    },
-    { 
-        question: 
-            "<b><nobr>S1= suku 1 |</nobr> <nobr>S2= suku 2 |</nobr> <nobr>V1 = variabel 1 |</nobr> <nobr>V2 = variabel 2 |</nobr> <nobr>Koe = koefisien |</nobr> <nobr>Kon = konstanta</nobr></b>" + 
             "\n Tentukan suku, variabel, koefisien, dan konstanta dari <b>3x<sup>2</sup> - 4x + 8</b>!", 
         options: [
             "S1 = -4x | S2 = 3x<sup>2</sup> | V1 = x<sup>2</sup> | V2 = x <br> Koe_x<sup>2</sup> = 3 | Koe_x = -4 | Kon = 8", 
